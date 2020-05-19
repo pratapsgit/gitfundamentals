@@ -1,0 +1,7 @@
+This document is going to capture all the git commands
+------------------------------------------------------
+git init
+git status
+git add <file name>
+git add .
+git rm --cached <file name>

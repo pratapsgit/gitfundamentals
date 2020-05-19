@@ -1,0 +1,79 @@
+This document is going to have all the git command snapshots
+------------------------------------------------------------
+[pratap@localhost gitfundamentals]$ git init
+Initialized empty Git repository in /home/pratap/Public/git_practicals/gitfundamentals/.git/
+
+[pratap@localhost gitfundamentals]$ ls -lrt
+total 8
+-rw-rw-r--. 1 pratap pratap 119 May 19 11:38 git_commands
+-rw-rw-r--. 1 pratap pratap 260 May 19 11:38 git_command_snaps
+[pratap@localhost gitfundamentals]$ ls -lat
+total 20
+drwxrwxr-x. 3 pratap pratap 4096 May 19 11:38 .
+-rw-rw-r--. 1 pratap pratap  260 May 19 11:38 git_command_snaps
+-rw-rw-r--. 1 pratap pratap  119 May 19 11:38 git_commands
+drwxrwxr-x. 7 pratap pratap 4096 May 19 11:37 .git
+drwxr-xr-x. 3 pratap pratap 4096 May 19 11:34 ..
+
+
+------------------------------------------------
+[pratap@localhost gitfundamentals]$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_command_snaps
+	git_commands
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+[pratap@localhost gitfundamentals]$ git add git_command_snaps 
+[pratap@localhost gitfundamentals]$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   git_command_snaps
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_commands
+
+[pratap@localhost gitfundamentals]$
+[pratap@localhost gitfundamentals]$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .git_commands.swp
+	new file:   git_command_snaps
+	new file:   git_commands
+
+[pratap@localhost gitfundamentals]$ 
+------------------------------------------------------------
+[pratap@localhost gitfundamentals]$ git rm --cached .git_commands.swp
+rm '.git_commands.swp'
+[pratap@localhost gitfundamentals]$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   git_command_snaps
+	new file:   git_commands
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   git_command_snaps
+	modified:   git_commands
+
+[pratap@localhost gitfundamentals]$ 
+---------------------------------------------------------------------
