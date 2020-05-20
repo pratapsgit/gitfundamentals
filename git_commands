@@ -5,3 +5,4 @@ git status
 git add <file name>
 git add .
 git rm --cached <file name>
+git config --global --edit
